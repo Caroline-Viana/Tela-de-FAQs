@@ -1,0 +1,128 @@
+@font-face {
+    font-family: "work-sans";
+    src: url(../assets/fonts/WorkSans-VariableFont_wght.ttf);
+}
+
+.body {
+    margin: 0;
+    height: 100%;
+    background-color: hsl(275, 100%, 97%);
+    font-size: 16px;
+    font-weight: 400;
+    font-family: work-sans;
+    color: hsl(292, 42%, 14%);
+}
+
+.banner-desktop {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+}
+
+.banner-mobile {
+    display: none;
+}
+
+.container {
+    background-color: hsl(0, 0%, 100%);
+    width: 35%;
+    padding: 2rem;
+    margin: 6rem auto;
+    border-radius: 0.85rem;
+    -webkit-box-shadow: 0px 20px 52px 8px rgba(140,105,145,0.19);
+    -moz-box-shadow: 0px 20px 52px 8px rgba(140,105,145,0.19);
+    box-shadow: 0px 20px 52px 8px rgba(140,105,145,0.19);
+}
+
+.titulo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+}
+
+.titulo-icon {
+    width: 7%;
+}
+
+.titulo-text {
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.tag {
+    padding: 1rem 0;
+}
+
+.tag-borda {
+    border-bottom: 2px solid hsl(275, 100%, 97%);
+}
+
+.tag_pergunta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tag_pergunta-titulo {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 1rem 0;
+}
+
+.tag_pergunta-titulo:hover {
+    color: hsl(293, 70%, 49%);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.tag_resposta {
+    display: none;
+    color: hsl(292, 16%, 49%);
+    line-height: 1.5rem;
+}
+
+.ativado {
+    cursor: pointer;
+}
+
+.desativado {
+    cursor: pointer;
+    display: none;
+}
+
+.attribution {
+    font-size: 11px; 
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width:375px) {
+    .banner-desktop {
+        display: none;
+    }
+
+    .banner-mobile {
+        display: block;
+        width: 100%;
+        position: absolute;
+        z-index: -1;
+        top: 0;
+    }
+
+    .container {
+        width: 70%;
+    }
+
+    .titulo {
+        padding: 0;
+    }
+
+    .titulo-text {
+        font-size: 32px;
+    }
+}

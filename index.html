@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./design/reset.css">
+  <link rel="stylesheet" href="./design/styles.css">
+  
+  <title>Frontend Mentor | FAQ accordion</title>
+</head>
+<body class="body">
+  <img src="./assets/images/background-pattern-desktop.svg" alt="Banner roxo desktop" class="banner-desktop">
+  <img src="./assets/images/background-pattern-mobile.svg" alt="Banner roxo desktop" class="banner-mobile">
+  <div class="container">
+    <div class="titulo">
+      <img src="./assets/images/icon-star.svg" alt="ícone de estrela" class="titulo-icon">
+      <h1 class="titulo-text">FAQs</h1> 
+    </div>
+    <section class="tag tag-borda">
+      <div class="tag_pergunta">
+        <h3 class="tag_pergunta-titulo">What is Frontend Mentor, and how will it help me?</h3>
+        <img src="./assets/images/icon-plus.svg" alt="Botão de mais" class="ativado" id="btn-mais1" onclick="toggle('btn-mais1', 'resposta1')">
+        <img src="./assets/images/icon-minus.svg" alt="Botão de menos" class="desativado" id="btn-menos1" onclick="toggle('btn-mais1', 'resposta1')">
+      </div>
+      <p class="tag_resposta" id="resposta1">
+        Frontend Mentor offers realistic coding challenges to help developers improve their 
+        frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for 
+        all levels and ideal for portfolio building.
+      </p>
+    </section>
+    <section class="tag tag-borda">
+      <div class="tag_pergunta">
+        <h3 class="tag_pergunta-titulo">Is Frontend Mentor free?</h3>
+        <img src="./assets/images/icon-plus.svg" alt="Botão de mais" class="ativado" id="btn-mais2" onclick="toggle('btn-mais2', 'resposta2')">
+        <img src="./assets/images/icon-minus.svg" alt="Botão de menos" class="desativado" id="btn-menos2" onclick="toggle('btn-mais2', 'resposta2')">
+      </div>
+      <p class="tag_resposta" id="resposta2">
+        Yes, Frontend Mentor offers both free and premium coding challenges, with the free 
+        option providing access to a range of projects suitable for all skill levels.
+      </p>
+    </section>
+    <section class="tag tag-borda">
+      <div class="tag_pergunta">
+        <h3 class="tag_pergunta-titulo">Can I use Frontend Mentor projects in my portfolio?</h3>
+        <img src="./assets/images/icon-plus.svg" alt="Botão de mais" class="ativado" id="btn-mais3" onclick="toggle('btn-mais3', 'resposta3')">
+        <img src="./assets/images/icon-minus.svg" alt="Botão de menos" class="desativado" id="btn-menos3" onclick="toggle('btn-mais3', 'resposta3')">
+      </div>
+      <p class="tag_resposta" id="resposta3">
+        Yes, you can use projects completed on Frontend Mentor in your portfolio. It's an excellent
+        way to showcase your skills to potential employers!
+      </p>
+    </section>
+    <section class="tag">
+      <div class="tag_pergunta">
+        <h3 class="tag_pergunta-titulo">How can I get help if I'm stuck on a challenge?</h3>
+        <img src="./assets/images/icon-plus.svg" alt="Botão de mais" class="ativado" id="btn-mais4" onclick="toggle('btn-mais4', 'resposta4')">
+        <img src="./assets/images/icon-minus.svg" alt="Botão de menos" class="desativado" id="btn-menos4" onclick="toggle('btn-mais4', 'resposta4')">
+      </div>
+      <p class="tag_resposta" id="resposta4">
+        The best place to get help is inside Frontend Mentor's Discord community. There's a help 
+        channel where you can ask questions and seek support from other community members.
+      </p>
+    </section>
+  </div>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/Caroline-Viana">Caroline Viana</a>.
+  </footer>
+  <script src="./js/script.js"></script>
+</body>
+</html>
